@@ -49,13 +49,13 @@ docker run -d -it -p 80:80/tcp --name <name-of-the-container> <name-of-the-image
 
 Type the amount that you want to convert and then press the green button(with check icon) on the right in order to perform the conversion and see its result. 
 
-You can also use the yellow button(with arrow icon) in the middle to switch between the currencies.
+You can also use the yellow button(with double arrow icon) in the middle to switch between the currencies.
 
 After performing the conversion you can also see the exchange rates historically in a table or in a graph. By changing the days from the dropdown(default is 7 days), you can see more historical data.
 
 <img src="https://i.hizliresim.com/e101ssq.PNG">
 
-Moreover, all of you conversion results are stored in your browser's local storage and it can be reached via the Conversion History tab on top. 
+Moreover, all of your conversion results are stored in your browser's local storage and it can be reached via the Conversion History tab on top. 
 
 <img src="https://i.hizliresim.com/53wgr7z.PNG">
 
