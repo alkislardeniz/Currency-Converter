@@ -47,7 +47,6 @@ docker run -d -it -p 80:80/tcp --name <name-of-the-container> <name-of-the-image
 
 <img src="https://i.hizliresim.com/31tpwzz.PNG">
 
-<br></br>
 Type the amount that you want to convert and then press the green button(with check icon) on the right in order to perform the conversion and see its result. 
 
 You can also use the yellow button(with arrow icon) in the middle to switch between the currencies.
@@ -56,13 +55,8 @@ After performing the conversion you can also see the exchange rates historically
 
 <img src="https://i.hizliresim.com/e101ssq.PNG">
 
-<br></br>
 Moreover, all of you conversion results are stored in your browser's local storage and it can be reached via the Conversion History tab on top. 
 
 <img src="https://i.hizliresim.com/53wgr7z.PNG">
 
-<br></br>
 Action buttons will be shown when the mouse arrow enters the actions column. By pressing the blue button(with eye icon) you can switch to the Currency Converter tab and perform the conversion. Also if you want to delete the specific conversion from the history you can press the red button(with bin icon).  
-
-
-<p></p>
