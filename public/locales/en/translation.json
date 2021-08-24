@@ -1,0 +1,17 @@
+{
+  "title": "I want to convert",
+  "select.from.currency": "Select from currency",
+  "select.to.currency": "Select to currency",
+  "amount": "Amount",
+  "timestamp": "Date",
+  "rate": "Exchange Rate",
+  "highest": "Highest",
+  "lowest": "Lowest",
+  "average": "Average",
+  "event": "Event",
+  "actions": "Actions",
+  "view.conversion.history": "Conversion History",
+  "currency.converter": "Currency Converter",
+  "table": "Table",
+  "chart": "Chart"
+}

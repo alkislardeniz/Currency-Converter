@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Currency Converter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://i.hizliresim.com/1iql6d6.png">
 
-## Available Scripts
+<h1>What's that?</h1>
+<p>Currency Converter is an application for calculating what the amount is worth in
+   another currency.</p>
 
-In the project directory, you can run:
+<h2>Prerequisites</h2>
+<h4>For development:</h4>
+<p>To download the dependencies of the project, you can use the following command in the directory of package.json: </p>
 
-### `yarn start`
+```
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<b>Please note that Node.js with version 14.5.0 and npm with version 6.14.5 must be also installed in order to run this command.</b>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h4>For production:</h4>
+<p>By using Dockerfile in the project's directory, you can run the following command in order to create a Docker image:</p>
 
-### `yarn test`
+```
+docker build -t <name-of-the-image> .
+```
+<b>Please note that Docker must be installed in the machine that you want to run the app.</b>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>You can verify the Docker image by using the following command:</p>
 
-### `yarn build`
+```
+docker images
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h2>Usage</h2>
+<p>Use the following command to run the application: </p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>Or alternatively, you can run the Docker image that you have created by using the following command:</p>
 
-### `yarn eject`
+```
+docker run -d -it -p 80:80/tcp --name <name-of-the-container> <name-of-the-image>:latest
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<p>After running the application, you can browse to localhost:3000(with npm install) or localhost:80(with Docker) and the following screen welcomes you.</p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src="https://i.hizliresim.com/31tpwzz.PNG">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<br></br>
+Type the amount that you want to convert and then press the green button(with check icon) on the right in order to perform the conversion and see its result. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+You can also use the yellow button(with arrow icon) in the middle to switch between the currencies.
 
-## Learn More
+After performing the conversion you can also see the exchange rates historically in a table or in a graph. By changing the days from the dropdown(default is 7 days), you can see more historical data.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img src="https://i.hizliresim.com/e101ssq.PNG">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br></br>
+Moreover, all of you conversion results are stored in your browser's local storage and it can be reached via the Conversion History tab on top. 
 
-### Code Splitting
+<img src="https://i.hizliresim.com/53wgr7z.PNG">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br></br>
+Action buttons will be shown when the mouse arrow enters the actions column. By pressing the blue button(with eye icon) you can switch to the Currency Converter tab and perform the conversion. Also if you want to delete the specific conversion from the history you can press the red button(with bin icon).  
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p></p>
