@@ -121,8 +121,7 @@ export const ConversionAppContainer = ({toast}) => {
                             setFromCurrency={setFromCurrencyAndDisableResult}
                             setConvertedAmount={setConvertedAmountAndShowResult}
                             convertButtonDisabled={convertButtonDisabled}
-                            rates={rates}
-                            toast={toast}/>
+                            rates={rates}/>
         <ConversionResultContainer toCurrency={toCurrency} fromCurrency={fromCurrency} fromAmount={amount}
                                    toAmount={convertedAmount} conversionResultDisabled={conversionResultDisabled}/>
         <ExchangeRatesHistoryContainer setDuration={setDurationAndDisableSelection} duration={duration}
