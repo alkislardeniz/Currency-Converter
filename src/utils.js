@@ -1,7 +1,7 @@
 const ERROR_GROWL_LIFE_IN_MS = 3000;
 const ERROR_GROWL_SEVERITY = "error";
 
-//TODO do not hold API key in frontend, use another alternatives like taking as an env. variable
+//TODO do not hold any API key in frontend, hold it in backend and make frontend to call the actual API via backend
 export const API_KEY = "8ffdca2fea03f176ce8f0db983da1b73ed54a861";
 
 //TODO remove this after purchasing Nomics API because there is a limit of 1 req per sec
