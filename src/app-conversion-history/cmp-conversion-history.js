@@ -32,7 +32,23 @@ export const ConversionHistoryTableComponent =
     }
 
     const getEventTemplate = rowData => {
-      return <div>{`${rowData.amount} ${rowData.fromCurrency} -> ${rowData.toAmount} ${rowData.toCurrency}`}</div>
+      return (
+        <div
+          onMouseEnter={() => setOpacityOfElementById(rowData.date, "1")}
+          onMouseLeave={() => setOpacityOfElementById(rowData.date, "0")}>
+          {`${rowData.amount} ${rowData.fromCurrency} -> ${rowData.toAmount} ${rowData.toCurrency}`}
+        </div>
+      )
+    };
+
+    const getDateTemplate = rowData => {
+      return (
+        <div
+          onMouseEnter={() => setOpacityOfElementById(rowData.date, "1")}
+          onMouseLeave={() => setOpacityOfElementById(rowData.date, "0")}>
+          {`${rowData.date}`}
+        </div>
+      )
     };
 
     return (
@@ -44,7 +60,7 @@ export const ConversionHistoryTableComponent =
         showGridlines
         value={conversions}
       >
-        <Column sortable field="date" header={t("timestamp")}/>
+        <Column sortable field="date" body={getDateTemplate} header={t("timestamp")}/>
         <Column field="event" body={getEventTemplate} header={t("event")}/>
         <Column field="actions" header={t("actions")} body={getActionButtonsTemplate}/>
       </DataTable>
