@@ -9,6 +9,8 @@ export const API_WAIT_DURATION_IN_MS = 1000;
 
 export const DAY_TO_MILLISECONDS = 86400000;
 
+export const LOCAL_STORAGE_KEY = "conversionHistory";
+
 export const getErrorContent = (error) => {
   if (error && error.response && error.response.status && error.response.statusText) {
     return {severity: ERROR_GROWL_SEVERITY, summary: error.response.statusText, detail: error.response.status, life: ERROR_GROWL_LIFE_IN_MS}

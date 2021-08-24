@@ -1,7 +1,7 @@
 import React from 'react';
 import {ConverterComponent} from "./cmp-currency-converter";
+import {LOCAL_STORAGE_KEY} from "../utils";
 
-export const LOCAL_STORAGE_KEY = "conversionHistory";
 
 export const ConverterContainer =
   ({setConvertedAmount, toCurrency, setToCurrency, fromCurrency, setFromCurrency, amount, setAmount, rates, convertButtonDisabled}) => {

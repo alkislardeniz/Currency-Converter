@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {ConversionHistoryTableComponent} from "./cmp-conversion-history";
-import {LOCAL_STORAGE_KEY} from "../app-currency-converter/cnt-currency-converter";
+import {LOCAL_STORAGE_KEY} from "../utils";
 
 
 export const ConversionHistoryTableContainer = ({onViewConversionClicked}) => {

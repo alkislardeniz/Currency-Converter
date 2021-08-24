@@ -3,7 +3,6 @@ import {Column} from "primereact/column";
 import React, {useState} from "react";
 import {Button} from "primereact/button";
 import {useTranslation} from 'react-i18next';
-import './button-template.css';
 
 export const ConversionHistoryTableComponent =
   ({conversions, onViewConversionClicked, onDeleteConversionClicked}) => {
@@ -18,7 +17,7 @@ export const ConversionHistoryTableComponent =
       return (
         <div
           id={rowData.date}
-          className={"invisible-buttons"}
+          className={"opacity-0"}
           onMouseEnter={() => setOpacityOfElementById(rowData.date, "1")}
           onMouseLeave={() => setOpacityOfElementById(rowData.date, "0")}
         >
